@@ -4,7 +4,7 @@ As a challenge to myself and my friends, I have committed to 100 days of coding 
 
 ### Day 2
 
-Today I am pulling my hair out. Trying to get the audio part of this audio program is the worst. I have two main issues, I am on Mac and I am on the M1 chip. God knows if I knew I was going to run into this much trouble with coding, I would have gotten a windows. This might be a project more sittuted to a windows computer.
+Today I am pulling my hair out. Trying to get the audio part of this audio program is the worst. I have two main issues, I am on Mac and I am on the M1 chip. God knows if I knew I was going to run into this much trouble with coding, I would have gotten a windows. This might be a project more sittuted to a windows computer. Instead, I switched my focus to the processing of the audio, the part I was looking forward to as a fun promblem
 
 ### Day 1 
 
