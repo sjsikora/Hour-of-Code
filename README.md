@@ -2,6 +2,9 @@
 
 As a challenge to myself and my friends, I have committed to 100 days of coding for an hour. Here is a log of my day by day and the progress I make:
 
+### Day 4 2/5/23
+
+Worked on a small side project to brute force a math assignment. Other than that, data entry for the dictonary and more processing work.
 
 ### Day 3 2/4/23
 
