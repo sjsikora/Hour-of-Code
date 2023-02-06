@@ -5,58 +5,7 @@ speechDict = {
     "not equal": "=/",
 
     "approximately": "≈",
-    "approximately equal"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    "dot": ".",
-    "point": ".",
-
-    "percent": "%",
-
-    "plus": "+",
-    "added": "+",
-
-    "minus": "-",
-    "subtracted": "-",
-
-    "slash": "/",
-    "divided": "/",
-
-    "times": "*",
-    "multiplied": "*",
+    "approximately equal": "≈",
 
     "less than": "<",
     "less than or equal to": ">=",
@@ -64,16 +13,53 @@ speechDict = {
     "greater than": ">",
     "greater than or equal to": ">=",
 
-    "not equal to": "=/",
-
-    "the power": "^",
-
-    "square root": "sqrt",
-
-    "bracket": "[",
     "round brackets": "(",
     "parentheses": "(",
     "parenthesis": "(",
+
+    "bracket": "[",
+
+    "plus": "+",
+    "added": "+",
+
+    "minus": "-",
+    "subtracted": "-",
+
+    "plus and minus": "±",
+
+    "times": "*",
+    "multiplied": "*",
+
+    "slash": "/",
+    "divided": "/",
+
+    "mod": "mod",
+
+    "dot": ".",
+    "period": ".",
+    "point": ".",
+
+    "the power": "^",
+    "exponent": "^",
+    "caret": "^",
+
+    "square root": "sqrt",
+    "cube root": "^(1/3)",
+    "fourth root": "^(1/4)",
+    "fifth root": "^(1/5)",
+    "sixth root": "^(1/6)",
+    "seventh root": "^(1/7)",
+    "eighth root": "^(1/8)",
+    "ninth root": "^(1/9)",
+    "tenth root": "^(1/10)",
+
+    "percent": "%",
+
+
+
+    "pi": "π",
+    "delta": "∆",
+
 
     "sine": "sin",
     "arc sine": "arcsin",

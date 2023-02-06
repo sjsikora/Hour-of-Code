@@ -25,18 +25,25 @@ testStringArray = testString.split(" ")
 mathWordsArray = testSpeech.keys()
 
 stringToReturn = ""
-
+lengthOfWordArray = len(testStringArray)
 
 
 i = 0
-while(i < len(testStringArray)):
+while(i < lengthOfWordArray):
 
-    word = testStringArray[i]
+    j = 0
+
+    #if ((4 + i) >= lengthOfWordArray):
+    #    j = lengthOfWordArray - i
+    #else:
+    #    j = 5
+
+    word = testStringArray[i].lower()
 
 
     # Test if the word is the best fit. Sometime, the voice may pick up on "cosine inverse of.." the program, if going word by word,
     # the program will see cosine as cos, and inverse as nothing.
-
+    wordToTest = word
     reachIndex, j = 1, 1
     while(j < 5):
 
@@ -44,7 +51,7 @@ while(i < len(testStringArray)):
         if (i + j >= len(testStringArray)):
             break
 
-        wordToTest = word + " " + testStringArray[i + j]
+        wordToTest += " " + testStringArray[i + j]
 
         if (wordToTest in mathWordsArray):
             word = wordToTest
