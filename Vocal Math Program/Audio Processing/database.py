@@ -1,6 +1,7 @@
 speechDict = {
 
     "equal": "=",
+    "equals": "=",
 
     "not equal": "=/",
 
@@ -26,6 +27,7 @@ speechDict = {
     "subtracted": "-",
 
     "plus and minus": "±",
+    "plus or minus": "±",
 
     "times": "*",
     "multiplied": "*",
@@ -64,18 +66,23 @@ speechDict = {
     "sine": "sin",
     "arc sine": "arcsin",
     "sine inverse": "arcsin",
+    "arcsin": "arcsin",
 
     "cosine": "cos",
     "arc cosine": "arccos",
     "cosine inverse": "arcos",
+    "arccos": "arccos",
 
     "tan": "tan",
     "arc tan": "arctan",
     "tan inverse": "arctan",
+    "arctan": "arctan",
 
     "tangent": "tan",
     "arc tangent": "arctan",
-    "tan inverse": "arctan"
+    "tangent inverse": "arctan",
+    "arctangent": "arctangent"
+    
 }
 
 

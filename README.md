@@ -2,6 +2,10 @@
 
 As a challenge to myself and my friends, I have committed to 100 days of coding for an hour. Here is a log of my day by day and the progress I make:
 
+### Day 5 2/6/23
+
+Worked some more on processing. An issue with filtering "math language" from normal language. I think one solution is numbers or single charaters pass. However, if and only if the word can be split into "nums then string" then pass. However I am still a little lost on how to deciver words like "to" from a math equation "xz". I think I might have to some charaters that can be filtered to. That was today, but then tried to help my friend with some leet code problems. I only got so far and then had to turn to homework.
+
 ### Day 4 2/5/23
 
 Worked on a small side project to brute force a math assignment. Other than that, data entry for the dictonary and more processing work.
