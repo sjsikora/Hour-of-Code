@@ -1,3 +1,8 @@
+import enchant
+
+# English dictionary
+dictionary = enchant.Dict("en_US")
+
 speechDict = {
 
     "equal": "=",
@@ -60,6 +65,7 @@ speechDict = {
 
 
     "pi": "π",
+    "pie": "π",
     "delta": "∆",
 
 
@@ -85,4 +91,17 @@ speechDict = {
     
 }
 
-
+vaildSymbols = [
+    "+",
+    "-",
+    "*",
+    "/",
+    "=",
+    "±",
+    ".",
+    "^",
+    "√",
+    "π",
+    "∆",
+    "%",
+]
