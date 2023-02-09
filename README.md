@@ -2,6 +2,10 @@
 
 As a challenge to myself and my friends, I have committed to 100 days of coding for an hour. Here is a log of my day by day and the progress I make:
 
+### Day 7 2/8/23
+
+The parathesis are killing me. Need to make sure that cosine of cosine of cosine of cosine of cosine of minus 2 is going to equal cos (cos(cos(cos(cos(cos(-2))))))
+
 ### Day 6 2/7/23
 
 More processing work, sucesses today (although some M1-chip nonsense). Found a solution from my problem yesterday, if the word is an english word, do not let it in. Hopefully this will prevent the "uhhh"s from being read as u * h^3. Will need to do some more testing and some more filtering work I bet.
