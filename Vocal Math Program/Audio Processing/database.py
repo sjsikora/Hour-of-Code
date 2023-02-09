@@ -3,8 +3,8 @@ import enchant
 # English dictionary
 dictionary = enchant.Dict("en_US")
 
-speechDict = {
 
+opratorDict = {
     "equal": "=",
     "equals": "=",
 
@@ -30,6 +30,7 @@ speechDict = {
 
     "minus": "-",
     "subtracted": "-",
+    "negative": "-",
 
     "plus and minus": "±",
     "plus or minus": "±",
@@ -40,8 +41,6 @@ speechDict = {
     "slash": "/",
     "divided": "/",
 
-    "mod": "mod",
-
     "dot": ".",
     "period": ".",
     "point": ".",
@@ -50,7 +49,13 @@ speechDict = {
     "exponent": "^",
     "caret": "^",
 
-    "square root": "sqrt",
+    "percent": "%",
+    "pi": "π",
+    "pie": "π",
+    "delta": "∆",
+    "infinity": "∞",
+
+
     "cube root": "^(1/3)",
     "fourth root": "^(1/4)",
     "fifth root": "^(1/5)",
@@ -60,13 +65,14 @@ speechDict = {
     "ninth root": "^(1/9)",
     "tenth root": "^(1/10)",
 
-    "percent": "%",
+}
 
 
 
-    "pi": "π",
-    "pie": "π",
-    "delta": "∆",
+
+operationsDict = {
+    
+    "square root": "sqrt",
 
 
     "sine": "sin",
@@ -83,11 +89,16 @@ speechDict = {
     "arc tan": "arctan",
     "tan inverse": "arctan",
     "arctan": "arctan",
+    "caught": "cot",
 
     "tangent": "tan",
     "arc tangent": "arctan",
     "tangent inverse": "arctan",
-    "arctangent": "arctangent"
+    "arctangent": "arctangent",
+
+    "natural log": "ln",
+
+    "break": "\n"
     
 }
 
@@ -104,4 +115,5 @@ vaildSymbols = [
     "π",
     "∆",
     "%",
+    "∞"
 ]
