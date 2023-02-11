@@ -2,10 +2,10 @@ from database import operationsDict, vaildSymbols, dictionary, opratorDict
 
 
 testStringNew = "sine of x cosine of x tan of X tangent of X arc sine of Y Arc cosine of Y cosine inverse of Y arctan of y y equals plus or minus the √1 - x ^ 2"
+testString = "cosine of negative cosine of 2x"
+testString = '23305 * x cosine parentheses 3x and'
 testString = "negative e to the power of negative X 2 ^ x - 1 * caught of x times 0 ^ 0 Infinity to the power of 0 f Prime of x equals -7 * e ^ 4 + 5 * x ^ 2 F Prime of x equals -28 * x ^ 3 + 10x + 2 F Prime of x = 7 / 2 * the square root of x"
 
-
-testString = "cosine of negative cosine of 2x"
 
 
 expected = "-e^(-x) 2^x - 1 * cot(0)*0^0* inf^0 f'(x) = -7*e^4 + 5*x^2 f'(x) = -28*x^3 + 10x + 2 f'(x) = 7/2*sqrt(x)"
@@ -23,42 +23,50 @@ def filterKeyWord(word):
         return False
 
     #The idea here being, if there is very math related symbol i.e. √ then it will most likely only be math related.
+    numbersOnly = False
     for char in word:
+
+        if numbersOnly and (not char.isnumeric()):
+            return False
+
+        if char.isnumeric():
+            numbersOnly = True
+
         if char in vaildSymbols:
             return True
 
-    return False
+    return True
+
+
 
 
 
 def finalStringCleanup(string):
     wordArray = string.split(" ")
-    opreators = opratorDict.values()
-    operations = operationsDict.values()
-
-    finalString = ""
-
     
+    opreators = opratorDict.values()
+    
+    finalString = ""
     i = 0
     while(i < len(wordArray)):
+
         word = wordArray[i]
 
-
-        if word in operations:
-            finalString = word + "("
-
-            j = 1
-            notOperator = False
-            while(notOperator):
-                if wordArray[i + j] not in opreators:
-                    notOperator = True
-                else:
-                    finalString += wordArray[i + j]
-                    j += 1
+        if i == (len(wordArray) - 1):
+            finalString += word
+            return finalString
 
 
+        if wordArray[i] in opreators:
+            finalString += word + " "
+        elif wordArray[i + 1] in opreators:
+            finalString += word + " "
+        else:
+            finalString += word + " * "
 
 
+        i += 1
+    
 
 
 
@@ -144,6 +152,8 @@ def processVoiceString(voiceString):
             stringToReturn += " "
 
         i += 1 + reachIndex
+
+    stringToReturn = finalStringCleanup(stringToReturn)
 
     return stringToReturn
 

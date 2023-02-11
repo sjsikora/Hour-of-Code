@@ -1,5 +1,4 @@
 import speech_recognition as sr
-from database import speechDict
 from processing import processVoiceString
 
 

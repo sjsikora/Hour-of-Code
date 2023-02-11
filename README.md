@@ -2,6 +2,10 @@
 
 As a challenge to myself and my friends, I have committed to 100 days of coding for an hour. Here is a log of my day by day and the progress I make:
 
+### Day 8 2/10/23
+
+Missed a day, however, I am back on. Think I am nearing the end of this project. The rest would be to expand the database and my outputs cleaner. Yet, if I were to talk to this program, I would feel confident putting it in desmos. Although, one fault is that the parentheses need to be explictly spoken to the program. Working on making a system warning the user if they do not have enough parentheses, but there is just no way to read the user's mind to place them.
+
 ### Day 7 2/8/23
 
 The parathesis are killing me. Need to make sure that cosine of cosine of cosine of cosine of cosine of minus 2 is going to equal cos (cos(cos(cos(cos(cos(-2))))))

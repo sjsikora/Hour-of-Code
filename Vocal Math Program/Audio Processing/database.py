@@ -23,7 +23,17 @@ opratorDict = {
     "parentheses": "(",
     "parenthesis": "(",
 
-    "bracket": "[",
+    "end": ")",
+    "end round brackets": ")",
+    "end parentheses": ")",
+    "end parenthesis": ")",
+    "end bracket": "]",
+
+    "and": ")",
+    "and round brackets": ")",
+    "and parentheses": ")",
+    "and parenthesis": ")",
+    "and bracket": "]",
 
     "plus": "+",
     "added": "+",
@@ -54,6 +64,7 @@ opratorDict = {
     "pie": "π",
     "delta": "∆",
     "infinity": "∞",
+    "prime": "'",
 
 
     "cube root": "^(1/3)",
