@@ -62,7 +62,7 @@ def finalStringCleanup(string):
         elif wordArray[i + 1] in opreators:
             finalString += word + " "
         else:
-            finalString += word + " * "
+            finalString += "(" + word + ")"
 
 
         i += 1

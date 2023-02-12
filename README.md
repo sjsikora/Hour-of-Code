@@ -2,6 +2,11 @@
 
 As a challenge to myself and my friends, I have committed to 100 days of coding for an hour. Here is a log of my day by day and the progress I make:
 
+
+### Day 9 2/11/23
+
+No commits on this repo today. I was doing some researching about what would be a good project to develop next. I think I am going to try to make an app. This will probably end up being full stack, but I am exicted to start working on it and getting past problems along the way. Instead for today see the connections repo for day 9. Yet, you will not find a lot of work quite yet.
+
 ### Day 8 2/10/23
 
 Missed a day, however, I am back on. Think I am nearing the end of this project. The rest would be to expand the database and my outputs cleaner. Yet, if I were to talk to this program, I would feel confident putting it in desmos. Although, one fault is that the parentheses need to be explictly spoken to the program. Working on making a system warning the user if they do not have enough parentheses, but there is just no way to read the user's mind to place them.
@@ -26,7 +31,7 @@ Worked on a small side project to brute force a math assignment. Other than that
 
 Worked on the function to process the words. Some fun problems today. If the speech comes back as "arc cosine", then a simple word by word process would process "arc" as nothing, and "cosine" as cos. So rather, further fit needs to be made. So now, the program reaches about 5 words ahead, and reports back the best fit. Although, a little worried about how many edge cases there is going to be because of how many math symbols there are.
 
-### Day 2/3/23
+### Day 2 2/3/23
 
 Today I am pulling my hair out. Trying to get the audio part of this audio program is the worst. I have two main issues, I am on Mac and I am on the M1 chip. God knows if I knew I was going to run into this much trouble with coding, I would have gotten a windows. This might be a project more sittuted to a windows computer. Instead, I switched my focus to the processing of the audio, the part I was looking forward to as a fun promblem.
 
