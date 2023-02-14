@@ -3,6 +3,10 @@
 As a challenge to myself and my friends, I have committed to 100 days of coding for an hour. Here is a log of my day by day and the progress I make:
 
 
+### Day 10 2/13/23
+
+Missed another day. But today kept working on the app. Mostly just following along with a guide on how to make users login. Think I actually mightjust skip to the backend. I really don't like front end work, and swift, although it may not be, just feels so messy to me. 
+
 ### Day 9 2/11/23
 
 No commits on this repo today. I was doing some researching about what would be a good project to develop next. I think I am going to try to make an app. This will probably end up being full stack, but I am exicted to start working on it and getting past problems along the way. Instead for today see the connections repo for day 9. Yet, you will not find a lot of work quite yet.
