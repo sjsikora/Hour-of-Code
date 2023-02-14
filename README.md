@@ -5,7 +5,7 @@ As a challenge to myself and my friends, I have committed to 100 days of coding 
 
 ### Day 10 2/13/23
 
-Missed another day. But today kept working on the app. Mostly just following along with a guide on how to make users login. Think I actually mightjust skip to the backend. I really don't like front end work, and swift, although it may not be, just feels so messy to me. 
+Missed another day. But today kept working on the app. Mostly just following along with a guide on how to make users login. Think I actually might just skip to the backend. I really don't like front end work, and swift, although it may not be, just feels so messy to me. 
 
 ### Day 9 2/11/23
 
