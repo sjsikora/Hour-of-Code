@@ -1,14 +1,7 @@
 from database import operationsDict, vaildSymbols, dictionary, opratorDict
 
+testString = "23305 * x cosine parentheses 3x and"
 
-testStringNew = "sine of x cosine of x tan of X tangent of X arc sine of Y Arc cosine of Y cosine inverse of Y arctan of y y equals plus or minus the √1 - x ^ 2"
-testString = "cosine of negative cosine of 2x"
-testString = '23305 * x cosine parentheses 3x and'
-testString = "negative e to the power of negative X 2 ^ x - 1 * caught of x times 0 ^ 0 Infinity to the power of 0 f Prime of x equals -7 * e ^ 4 + 5 * x ^ 2 F Prime of x equals -28 * x ^ 3 + 10x + 2 F Prime of x = 7 / 2 * the square root of x"
-
-
-
-expected = "-e^(-x) 2^x - 1 * cot(0)*0^0* inf^0 f'(x) = -7*e^4 + 5*x^2 f'(x) = -28*x^3 + 10x + 2 f'(x) = 7/2*sqrt(x)"
 
 #Part of math functions are strings similar to "2x", "√1", "(", etc. This function will return true if the string is a math realted.
 def filterKeyWord(word):
@@ -24,10 +17,14 @@ def filterKeyWord(word):
 
     #The idea here being, if there is very math related symbol i.e. √ then it will most likely only be math related.
     numbersOnly = False
+    pastNumbersOnly = False
     for char in word:
 
-        if numbersOnly and (not char.isnumeric()):
+        if pastNumbersOnly and char.isnumeric():
             return False
+
+        if numbersOnly and (not char.isnumeric()):
+            pastNumbersOnly = True
 
         if char.isnumeric():
             numbersOnly = True
@@ -79,7 +76,6 @@ def processVoiceString(voiceString):
     stringToReturn = ""
     lengthOfWordArray = len(wordArray)
     i = 0
-    ofIndex = -1
     #Looping through every word...
     
     while(i < lengthOfWordArray):
@@ -89,14 +85,11 @@ def processVoiceString(voiceString):
         word = wordArray[i].lower()
         wordAdded = False
 
-        # If the word is of add a "(" to the string to return. Then ensure that the next token
-        # is added, then add a ")" to the string to return. 
-        #if word == "of":
-        #    stringToReturn += "("
-        #    ofIndex = i + 1
+        if word == "of":
+            stringToReturn += "("
 
         # If the word is a number, or a letter, or a valid symbol, add it to the string to return.
-        if filterKeyWord(word):
+        elif filterKeyWord(word):
 
             stringToReturn += word
             wordAdded = True
@@ -139,15 +132,6 @@ def processVoiceString(voiceString):
                 stringToReturn += word
                 wordAdded = True
 
-
-
-        ##if the word is an opreator, wait till add the paranthesis after the next keyword
-        #if word in vaildSymbols:
-        #    ofIndex = i + 2
-
-        #if (i == ofIndex) and (wordAdded):
-        #    stringToReturn += ")"
-
         if wordAdded:
             stringToReturn += " "
 
@@ -156,13 +140,5 @@ def processVoiceString(voiceString):
     stringToReturn = finalStringCleanup(stringToReturn)
 
     return stringToReturn
-
-
-
-
-
-
-
-
 
 print(processVoiceString(testString))

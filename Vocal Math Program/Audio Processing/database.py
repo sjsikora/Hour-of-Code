@@ -79,12 +79,9 @@ opratorDict = {
 }
 
 
-
-
 operationsDict = {
     
     "square root": "sqrt",
-
 
     "sine": "sin",
     "arc sine": "arcsin",
