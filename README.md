@@ -3,6 +3,10 @@
 As a challenge to myself and my friends, I have committed to 100 days of coding for an hour. Here is a log of my day by day and the progress I make:
 
 
+### Day 11 2/14/23
+
+Finished up my vocal math program, may need to expand the database if it was going to go into something real. Think my next project should be some varations of chess rather than an app. Will check working on this later.
+
 ### Day 10 2/13/23
 
 Missed another day. But today kept working on the app. Mostly just following along with a guide on how to make users login. Think I actually might just skip to the backend. I really don't like front end work, and swift, although it may not be, just feels so messy to me. 
