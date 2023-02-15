@@ -3,7 +3,7 @@ from processing import processVoiceString
 
 r = sr.Recognizer()
 
-voiceFile = sr.AudioFile('Vocal Math Program/Audio Processing/temp3.wav')
+voiceFile = sr.AudioFile('Vocal Math Program/Audio Processing/temp2.wav')
 
 with voiceFile as source:
     audio = r.record(source)

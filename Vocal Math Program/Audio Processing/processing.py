@@ -1,8 +1,5 @@
 from database import operationsDict, vaildSymbols, dictionary, opratorDict
 
-testString = "23305 * x cosine parentheses 3x and"
-
-
 #Part of math functions are strings similar to "2x", "√1", "(", etc. This function will return true if the string is a math realted.
 def filterKeyWord(word):
 
@@ -33,8 +30,6 @@ def filterKeyWord(word):
             return True
 
     return True
-
-
 
 
 
@@ -139,6 +134,4 @@ def processVoiceString(voiceString):
 
     stringToReturn = finalStringCleanup(stringToReturn)
 
-    return stringToReturn
-
-print(processVoiceString(testString))
+    return (stringToReturn.replace(" ", ""))
