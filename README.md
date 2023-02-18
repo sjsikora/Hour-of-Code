@@ -2,6 +2,9 @@
 
 As a challenge to myself and my friends, I have committed to 100 days of coding for an hour. Here is a log of my day by day and the progress I make:
 
+### Day 12 2/17/23
+
+Update later.
 
 ### Day 11 2/14/23
 
