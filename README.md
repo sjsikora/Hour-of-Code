@@ -2,9 +2,13 @@
 
 As a challenge to myself and my friends, I have committed to 100 days of coding for an hour. Here is a log of my day by day and the progress I make:
 
+### Day 13 2/28/23
+
+Back from reading break. Honestly, I was planning to do it over break, yet, so many things got in the way. Now that I am back into a routine, we are back in the grind. I kept working on wacky chess. I stopped working on the GUI because I really just wanted a project I could chip away at with my understanding. I am sure I will come back to a GUI later. Also, again I might pause this project because I thought of an interseting concept, a data analysis of grandmaster chess games. This has probably been done, yet it would be very intersting to see what spots in the board people were checked mate in the most, by what pieces, where the vulenable squares are. I am sure this data exists, but it would be fun to analysis it msyself.
+
 ### Day 12 2/17/23
 
-Update later.
+More work on wacky chess.
 
 ### Day 11 2/14/23
 
