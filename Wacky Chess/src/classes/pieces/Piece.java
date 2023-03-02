@@ -25,16 +25,8 @@ public abstract class Piece {
         this.myBoard = myBoard;
     }
 
-    public boolean isIsWhite() {
+    public boolean isWhite() {
         return this.isWhite;
-    }
-
-    public boolean getIsWhite() {
-        return this.isWhite;
-    }
-
-    public void setIsWhite(boolean isWhite) {
-        this.isWhite = isWhite;
     }
 
     public boolean isAlive() {

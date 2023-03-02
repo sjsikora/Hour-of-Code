@@ -12,13 +12,14 @@ public class Pawn extends Piece {
     @Override
     public int[][] legalMoves() {
 
+        int upOrDown = this.isWhite() ? 1 : -1;
         int numLegalMoves = 0;
         boolean[] legalMovesBoolean = new boolean[4];
 
-        Piece above = getMyBoard().getPiece(getR(), getF()+1);
-        Piece above2 = getMyBoard().getPiece(getR(), getF()+2);
-        Piece aboveLeft = getMyBoard().getPiece(getR()-1, getF()+1);
-        Piece aboveRight = getMyBoard().getPiece(getR()+1, getF()+1);
+        Piece above = getMyBoard().getPiece(getR(), getF() + upOrDown);
+        Piece above2 = getMyBoard().getPiece(getR(), getF() + (2 * upOrDown));
+        Piece aboveLeft = getMyBoard().getPiece(getR() - upOrDown, getF() + upOrDown);
+        Piece aboveRight = getMyBoard().getPiece(getR() + upOrDown, getF() + upOrDown);
 
         if (above == null) {
             numLegalMoves++;
@@ -28,15 +29,14 @@ public class Pawn extends Piece {
             numLegalMoves++;
             legalMovesBoolean[1] = true;
         }
-        if (aboveLeft != null && aboveLeft.isIsWhite() != isIsWhite()) {
+        if (aboveLeft != null && (aboveLeft.isWhite() != isWhite())) {
             numLegalMoves++;
             legalMovesBoolean[2] = true;
         }
-        if (aboveRight != null && aboveRight.isIsWhite() != isIsWhite()) {
+        if (aboveRight != null && aboveRight.isWhite() != isWhite()) {
             numLegalMoves++;
             legalMovesBoolean[3] = true;
         }
-
 
         int[][] legalMoves = new int[numLegalMoves][2];
 
@@ -44,22 +44,22 @@ public class Pawn extends Piece {
 
         if (legalMovesBoolean[0]) {
             legalMoves[rowNum][0] = getR();
-            legalMoves[rowNum][1] = getF()+1;
+            legalMoves[rowNum][1] = getF() + upOrDown;
             rowNum++;
         }
         if (legalMovesBoolean[1]) {
             legalMoves[rowNum][0] = getR();
-            legalMoves[rowNum][1] = getF()+2;
+            legalMoves[rowNum][1] = getF() + (2 * upOrDown);
             rowNum++;
         }
         if (legalMovesBoolean[2]) {
-            legalMoves[rowNum][0] = getR()-1;
-            legalMoves[rowNum][1] = getF()+1;
+            legalMoves[rowNum][0] = getR() - upOrDown;
+            legalMoves[rowNum][1] = getF() + upOrDown;
             rowNum++;
         }
         if (legalMovesBoolean[3]) {
-            legalMoves[rowNum][0] = getR()+1;
-            legalMoves[rowNum][1] = getF()+1;
+            legalMoves[rowNum][0] = getR() + upOrDown;
+            legalMoves[rowNum][1] = getF() + upOrDown;
             rowNum++;
         }
 

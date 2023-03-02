@@ -11,8 +11,25 @@ public class Knight extends Piece {
         return true;
     }
 
+
     @Override
     public char getSymbol() {
         return 'k';
+    }
+
+    @Override
+    public int[][] legalMoves() {
+
+        int upOrDown = this.isWhite() ? 1 : -1;
+
+        int[] aboveRight = {getR() + 1, getF() + 2}
+        
+
+
+
+
+
+
+
     }
 }
